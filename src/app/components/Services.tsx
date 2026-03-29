@@ -1,7 +1,7 @@
 import { Fence, Hammer, Wrench, PaintBucket, Leaf, Home } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import privacyFencingImage from 'figma:asset/46f09c304d2df8e90d7f5750cb6282d707653800.png';
-import yardMaintenanceImage from 'figma:asset/b3415399c05c9feb700b4e81ed5dc7980c9ebf90.png';
+import privacyFencingImage from '../../assets/46f09c304d2df8e90d7f5750cb6282d707653800.png';
+import yardMaintenanceImage from '../../assets/b3415399c05c9feb700b4e81ed5dc7980c9ebf90.png';
 
 const services = [
   {

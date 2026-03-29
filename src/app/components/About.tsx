@@ -1,6 +1,6 @@
 import { Award, Clock, Users, Shield } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import aboutImage from 'figma:asset/cdac786251e43e7e353a3ee7bd28fef184137f8b.png';
+import aboutImage from '../../assets/cdac786251e43e7e353a3ee7bd28fef184137f8b.png';
 
 const features = [
   {
