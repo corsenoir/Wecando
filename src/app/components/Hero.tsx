@@ -24,17 +24,11 @@ export function Hero() {
             Professional privacy fencing installation and comprehensive home maintenance services
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            
-              href="#contact"
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg transition-colors inline-flex items-center justify-center gap-2"
-            >
+            <a href="#contact" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg transition-colors inline-flex items-center justify-center gap-2">
               <Phone className="w-5 h-5" />
               Get a Free Quote
             </a>
-            
-              href="#services"
-              className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg border border-white/30 transition-colors inline-flex items-center justify-center"
-            >
+            <a href="#services" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg border border-white/30 transition-colors inline-flex items-center justify-center">
               Our Services
             </a>
           </div>
