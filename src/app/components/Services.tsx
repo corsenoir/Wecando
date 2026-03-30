@@ -3,74 +3,40 @@ import privacyFencingImage from '../../assets/46f09c304d2df8e90d7f5750cb6282d707
 import yardMaintenanceImage from '../../assets/b3415399c05c9feb700b4e81ed5dc7980c9ebf90.png';
 
 const services = [
-  {
-    icon: Fence,
-    title: 'Privacy Fencing',
-    description: 'Firesmart metal fences/partitions custom built to your preferences',
-    image: privacyFencingImage,
-  },
-  {
-    icon: Leaf,
-    title: 'Yard Maintenance and Retaining walls',
-    description: 'Keep your outdoor spaces pristine with our comprehensive yard care services.',
-    image: yardMaintenanceImage,
-  },
-  {
-    icon: PaintBucket,
-    title: 'Painting and Dry Wall Services',
-    description: 'Dry Wall repairs and Interior/exterior painting and to refresh and protect your home\'s surfaces.',
-  },
-  {
-    icon: Hammer,
-    title: 'General Repairs',
-    description: 'From minor fixes to major repairs, we handle all your home maintenance needs with expertise.',
-  },
-  {
-    icon: Wrench,
-    title: 'Deck & Patio Work',
-    description: 'Build, repair, and maintain beautiful outdoor living spaces for your enjoyment.',
-  },
-  {
-    icon: Home,
-    title: 'Property Upkeep',
-    description: 'Regular maintenance packages to keep your property in top condition year-round.',
-  },
+  { icon: Fence, title: 'Privacy Fencing', description: 'Firesmart metal fences/partitions custom built to your preferences', image: privacyFencingImage },
+  { icon: Leaf, title: 'Yard Maintenance and Retaining Walls', description: 'Keep your outdoor spaces pristine with our comprehensive yard care services.', image: yardMaintenanceImage },
+  { icon: PaintBucket, title: 'Painting and Dry Wall Services', description: 'Dry wall repairs and interior/exterior painting to refresh and protect your home.' },
+  { icon: Hammer, title: 'General Repairs', description: 'From minor fixes to major repairs, we handle all your home maintenance needs.' },
+  { icon: Wrench, title: 'Deck and Patio Work', description: 'Build, repair, and maintain beautiful outdoor living spaces for your enjoyment.' },
+  { icon: Home, title: 'Property Upkeep', description: 'Regular maintenance packages to keep your property in top condition year-round.' },
 ];
 
 export function Services() {
   return (
-    <section id="services" className="py-20 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4">Our Services</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+    <section id="services" style={{padding:'5rem 1rem', background:'#f9fafb'}}>
+      <div style={{maxWidth:'80rem', margin:'0 auto'}}>
+        <div style={{textAlign:'center', marginBottom:'4rem'}}>
+          <h2 style={{fontSize:'3rem', fontWeight:'700', marginBottom:'1rem'}}>Our Services</h2>
+          <p style={{fontSize:'1.25rem', color:'#4b5563', maxWidth:'42rem', margin:'0 auto'}}>
             Comprehensive solutions for all your fencing and home maintenance needs
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(300px, 1fr))', gap:'2rem'}}>
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div
-                key={index}
-                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
-              >
+              <div key={index} style={{background:'white', borderRadius:'0.5rem', overflow:'hidden', boxShadow:'0 4px 6px rgba(0,0,0,0.1)'}}>
                 {service.image && (
-                  <div className="h-48 overflow-hidden">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
+                  <div style={{height:'12rem', overflow:'hidden'}}>
+                    <img src={service.image} alt={service.title} style={{width:'100%', height:'100%', objectFit:'cover'}} />
                   </div>
                 )}
-                <div className="p-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-green-600" />
+                <div style={{padding:'1.5rem'}}>
+                  <div style={{width:'3rem', height:'3rem', background:'#dcfce7', borderRadius:'0.5rem', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'1rem'}}>
+                    <Icon size={24} color="#16a34a" />
                   </div>
-                  <h3 className="text-xl mb-2">{service.title}</h3>
-                  <p className="text-gray-600">{service.description}</p>
+                  <h3 style={{fontSize:'1.25rem', fontWeight:'600', marginBottom:'0.5rem'}}>{service.title}</h3>
+                  <p style={{color:'#4b5563'}}>{service.description}</p>
                 </div>
               </div>
             );

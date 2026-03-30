@@ -4,31 +4,23 @@ import logoImage from '../../assets/7cdd209acd490c1e731d651d1a4954aef1fadce2.png
 
 export function Hero() {
   return (
-    <div className="relative h-screen min-h-[600px]">
-      <div className="absolute inset-0">
-        <img
-          src={heroBackground}
-          alt="Modern home exterior"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/50"></div>
+    <div style={{position:'relative', height:'100vh', minHeight:'600px'}}>
+      <div style={{position:'absolute', inset:0}}>
+        <img src={heroBackground} alt="hero" style={{width:'100%', height:'100%', objectFit:'cover'}} />
+        <div style={{position:'absolute', inset:0, background:'rgba(0,0,0,0.5)'}}></div>
       </div>
-      <div className="relative h-full flex items-center justify-center px-4">
-        <div className="text-center text-white max-w-4xl">
-          <img
-            src={logoImage}
-            alt="We Can Do"
-            className="w-full max-w-xs mx-auto mb-6"
-          />
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
+      <div style={{position:'relative', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', padding:'0 1rem'}}>
+        <div style={{textAlign:'center', color:'white', maxWidth:'56rem'}}>
+          <img src={logoImage} alt="We Can Do" style={{width:'240px', margin:'0 auto 1.5rem'}} />
+          <p style={{fontSize:'1.25rem', marginBottom:'2rem', color:'#e5e7eb'}}>
             Professional privacy fencing installation and comprehensive home maintenance services
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg transition-colors inline-flex items-center justify-center gap-2">
-              <Phone className="w-5 h-5" />
+          <div style={{display:'flex', gap:'1rem', justifyContent:'center', flexWrap:'wrap'}}>
+            <a href="#contact" style={{background:'#16a34a', color:'white', padding:'1rem 2rem', borderRadius:'0.5rem', display:'inline-flex', alignItems:'center', gap:'0.5rem', textDecoration:'none'}}>
+              <Phone size={20} />
               Get a Free Quote
             </a>
-            <a href="#services" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg border border-white/30 transition-colors inline-flex items-center justify-center">
+            <a href="#services" style={{background:'rgba(255,255,255,0.1)', color:'white', padding:'1rem 2rem', borderRadius:'0.5rem', border:'1px solid rgba(255,255,255,0.3)', textDecoration:'none'}}>
               Our Services
             </a>
           </div>
