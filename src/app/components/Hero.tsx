@@ -13,12 +13,11 @@ export function Hero() {
         />
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
-      
       <div className="relative h-full flex items-center justify-center px-4">
         <div className="text-center text-white max-w-4xl">
-          <img 
-            src={logoImage} 
-            alt="We Can Do" 
+          <img
+            src={logoImage}
+            alt="We Can Do"
             className="w-full max-w-xs mx-auto mb-6"
           />
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
