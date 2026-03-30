@@ -1,11 +1,12 @@
 import { Fence, Hammer, Wrench, PaintBucket, Leaf, Home } from 'lucide-react';
 import privacyFencingImage from '../../assets/46f09c304d2df8e90d7f5750cb6282d707653800.png';
 import yardMaintenanceImage from '../../assets/b3415399c05c9feb700b4e81ed5dc7980c9ebf90.png';
+import paintingImage from '../../assets/painting.jpg';
 
 const services = [
   { icon: Fence, title: 'Privacy Fencing', description: 'Firesmart metal fences/partitions custom built to your preferences', image: privacyFencingImage },
   { icon: Leaf, title: 'Yard Maintenance and Retaining Walls', description: 'Keep your outdoor spaces pristine with our comprehensive yard care services.', image: yardMaintenanceImage },
-  { icon: PaintBucket, title: 'Painting and Dry Wall Services', description: 'Dry wall repairs and interior/exterior painting to refresh and protect your home.' },
+  { icon: PaintBucket, title: 'Painting and Dry Wall Services', description: 'Dry wall repairs and interior/exterior painting to refresh and protect your home.', image: paintingImage },
   { icon: Hammer, title: 'General Repairs', description: 'From minor fixes to major repairs, we handle all your home maintenance needs.' },
   { icon: Wrench, title: 'Deck and Patio Work', description: 'Build, repair, and maintain beautiful outdoor living spaces for your enjoyment.' },
   { icon: Home, title: 'Property Upkeep', description: 'Regular maintenance packages to keep your property in top condition year-round.' },
