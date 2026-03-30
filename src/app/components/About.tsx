@@ -1,5 +1,4 @@
-import { Award, Clock, Users, Shield } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { Award, Clock, Users } from 'lucide-react';
 import aboutImage from '../../assets/cdac786251e43e7e353a3ee7bd28fef184137f8b.png';
 
 const features = [
@@ -18,7 +17,6 @@ const features = [
     title: 'Local Experience',
     description: 'Bringing years of local expertise to every job.',
   },
-  
 ];
 
 export function About() {
@@ -39,7 +37,7 @@ export function About() {
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-xl">
-            <ImageWithFallback
+            <img
               src={aboutImage}
               alt="Professional tools"
               className="w-full h-full object-cover"

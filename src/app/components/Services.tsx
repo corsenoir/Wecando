@@ -1,5 +1,4 @@
 import { Fence, Hammer, Wrench, PaintBucket, Leaf, Home } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import privacyFencingImage from '../../assets/46f09c304d2df8e90d7f5750cb6282d707653800.png';
 import yardMaintenanceImage from '../../assets/b3415399c05c9feb700b4e81ed5dc7980c9ebf90.png';
 
@@ -59,7 +58,7 @@ export function Services() {
               >
                 {service.image && (
                   <div className="h-48 overflow-hidden">
-                    <ImageWithFallback
+                    <img
                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
